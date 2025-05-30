@@ -1,3 +1,11 @@
+terraform {
+  required_providers {
+    vsphere = {
+      source  = "vmware/vsphere"
+      version = "~> 2.12.0"
+    }
+  }
+}
 # Configure the vSphere provider
 provider "vsphere" {
   user           = var.vsphere_user
